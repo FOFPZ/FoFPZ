@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoFPZ — личный сайт</title>
+  <!-- ЗАМЕНИТЕ: описание сайта для поисковиков и соцсетей -->
+  <meta name="description" content="Личный сайт FoFPZ: проекты, идеи и контакты.">
+  <meta property="og:title" content="FoFPZ — личный сайт">
+  <meta property="og:description" content="Проекты, идеи и контакты.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='800' fill='white' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Декоративный фон -->
+  <div class="bg-decor" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ===================== НАВИГАЦИЯ ===================== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#home">Fo<span>FPZ</span></a>
+
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Сменить тему">☀️</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== ГЕРОЙ ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-badge"><span class="dot"></span> Сайт открыт и работает</div>
+
+      <h1>Привет, я — <span class="gradient">FoFPZ</span></h1>
+
+      <p class="typewriter-line"><span id="typewriter"></span><span class="caret" id="caret"></span></p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">
+          Смотреть проекты
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#contact">Связаться со мной</a>
+      </div>
+    </section>
+
+    <!-- ===================== ОБО МНЕ ===================== -->
+    <section id="about">
+      <div class="reveal">
+        <span class="section-tag">Обо мне</span>
+        <h2 class="section-title">Кто я такой?</h2>
+        <p class="section-sub">Короткое место для самопрезентации. Расскажите здесь о себе в паре предложений.</p>
+      </div>
+
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <!-- ЗАМЕНИТЕ: текст «Обо мне» -->
+          <p>Это <strong>заготовка текста</strong>. Напишите здесь, кто вы, чем увлекаетесь и чем занимаетесь — программирование, творчество, учёба, игры, музыка… всё, что посчитаете нужным.</p>
+          <p>Второй абзац — для деталей: что вам интересно, над чем сейчас работаете и какие у вас планы на этот сайт. По мере появления контента он будет наполняться «многим чем» 🙂</p>
+        </div>
+
+        <div class="about-card">
+          <h3>Коротко</h3>
+          <!-- ЗАМЕНИТЕ: факты о себе -->
+          <ul class="facts">
+            <li><span class="k">Ник</span><span class="v">FoFPZ</span></li>
+            <li><span class="k">Город</span><span class="v">Ваш город</span></li>
+            <li><span class="k">Чем занимаюсь</span><span class="v">Чем угодно</span></li>
+            <li><span class="k">Статус</span><span class="v">Открыт к общению</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ЗАМЕНИТЕ: теги интересов -->
+      <div class="chips reveal">
+        <span class="chip">Интерес №1</span>
+        <span class="chip">Интерес №2</span>
+        <span class="chip">Интерес №3</span>
+        <span class="chip">Интерес №4</span>
+        <span class="chip">Интерес №5</span>
+      </div>
+    </section>
+
+    <!-- ===================== ПРОЕКТЫ ===================== -->
+    <section id="projects">
+      <div class="reveal">
+        <span class="section-tag">Проекты</span>
+        <h2 class="section-title">Чем я занимаюсь</h2>
+        <p class="section-sub">Карточки-заготовки. Замените их на реальные проекты: укажите название, описание и ссылку.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- ЗАМЕНИТЕ: карточка проекта №1 -->
+        <a class="project-card reveal" href="#" target="_blank" rel="noopener">
+          <div class="project-icon">🚀</div>
+          <h3>Проект №1</h3>
+          <p>Опишите здесь проект: что он делает, чем интересен и почему им стоит гордиться.</p>
+          <div class="tags"><span class="tag">тег</span><span class="tag">тег</span></div>
+          <span class="project-link">Подробнее →</span>
+        </a>
+
+        <!-- ЗАМЕНИТЕ: карточка проекта №2 -->
+        <a class="project-card reveal" href="#" target="_blank" rel="noopener">
+          <div class="project-icon">🧩</div>
+          <h3>Проект №2</h3>
+          <p>Вторая карточка для второго проекта. Тексты, теги и ссылка — всё меняется так же просто.</p>
+          <div class="tags"><span class="tag">тег</span><span class="tag">тег</span></div>
+          <span class="project-link">Подробнее →</span>
+        </a>
+
+        <!-- ЗАМЕНИТЕ: карточка проекта №3 -->
+        <a class="project-card reveal" href="#" target="_blank" rel="noopener">
+          <div class="project-icon">✨</div>
+          <h3>Проект №3</h3>
+          <p>Третья карточка. Добавляйте сколько угодно новых — сетка сама подстроится под них.</p>
+          <div class="tags"><span class="tag">тег</span><span class="tag">тег</span></div>
+          <span class="project-link">Подробнее →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== КОНТАКТЫ ===================== -->
+    <section id="contact">
+      <div class="contact-box reveal">
+        <h2>Свяжитесь со мной</h2>
+        <p>Открыт для общения, идей и предложений. Выберите удобный способ связи.</p>
+        <div class="contact-actions">
+          <!-- ЗАМЕНИТЕ: реальные ссылки на соцсети и почту -->
+          <a class="btn btn-primary" href="https://github.com/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.39-5.26 5.68.41.35.77 1.05.77 2.12 0 1.53-.01 2.77-.01 3.14 0 .3.2.67.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="https://t.me/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 3.12 2.9 10.47c-1.3.52-1.29 1.24-.23 1.56l4.87 1.52 1.89 5.7c.23.63.12.88.79.88.52 0 .75-.24 1.04-.52l2.4-2.32 4.99 3.68c.92.5 1.58.24 1.8-.85l3.28-15.48c.34-1.35-.49-1.96-1.79-1.52Z"/></svg>
+            Telegram
+          </a>
+          <a class="btn btn-ghost" href="mailto:you@example.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+            Почта
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== ПОДВАЛ ===================== -->
+  <footer>
+    © <span id="year"></span> FoFPZ · Сделано с душой на <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
